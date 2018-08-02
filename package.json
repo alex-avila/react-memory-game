@@ -14,12 +14,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint src/**/*.js --fix",
+    "pretty": "prettier --write",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
   },
   "homepage": "https://alex-avila.github.io/react-memory-game",
   "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
     "gh-pages": "^1.2.0"
   }
 }
