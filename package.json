@@ -20,6 +20,17 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,css}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
   "homepage": "https://alex-avila.github.io/react-memory-game",
   "devDependencies": {
     "babel-eslint": "^8.2.6",
